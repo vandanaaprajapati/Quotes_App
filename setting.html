@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    *{
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* .out-content{
+    width:100%;
+    background-color: pink;
+}
+    .content1{
+        padding:0px 20px;
+        width:100%;
+        margin:20px auto;
+        border-radius: 20px;
+        background-color: RED;
+    }
+    .setting{
+        display: flex;
+        flex-direction: column;
+margin-top:20px;
+width:500px;
+margin:auto;
+flex-wrap: wrap;
+background-color: yellow;
+    }
+   .setting a{
+        text-decoration: none;
+        background-color:black;
+        color: whitesmoke;
+       margin-bottom: 15px;
+       padding:10px;
+       border-radius: 13px;
+       text-align: center;
+       font-weight: bold;
+    }
+     */
+</style>
+<body>
+    <!-- <div class="out-content"> -->
+    <div class="content">
+        <a href="index.html"><h2 style="color:black;font-size:20px;">settings</h2></a>
+        <div class="setting">        
+        <a onclick="toggleDarkMode()" href="">Dark Theme</a>
+        <a href="#">Remove Ads</a>
+        <a href="#">App Icon</a>
+        <a href="#">Language</a>
+        <a href="#">Rate Us</a>
+        <a href="#">Share</a>
+        <a href="#">More App</a>
+        <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+    </div>
+    
+    <div class="bottom-navigation">
+        <a href="index.html"><div class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </div></a>
+        <a href="category.html"><div class="nav-item">
+            <i class="fa-solid fa-layer-group"></i>          
+             <span>Categories</span>
+        </div></a>
+        <a href="Authore.html"><div class="nav-item">
+            <i class="fa-solid fa-list"></i>
+            <span>Authores</span>
+        </div></a>
+        <a href="Favourite.html"><div class="nav-item">
+            <i class="fa-solid fa-heart"></i>          
+              <span>Favorites</span>
+        </div></a>
+        <a href="setting.html"><div class="nav-item">
+            <i class="fa-solid fa-gear"></i>          
+              <span>Settings</span>
+        </div></a>
+    </div>
+    <script>
+        function toggleDarkMode(){
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

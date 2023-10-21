@@ -1,0 +1,233 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.font{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.content{
+   padding:10px 25px;
+   background-color: rgb(245, 249, 253);
+   margin-bottom: 100px;
+}
+.Quote-title a{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    padding-left:20px;
+}
+.content a, .category-list a{
+    text-decoration: none;
+}
+h6{
+    font-size:18px;
+}
+
+.inner-info h2{
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+}
+
+.outer-banner{
+    background-image: url('images/category_img/banner1.jpg');
+    height:350px;
+    width:100%;
+    position: relative;
+    top:20px;
+    border-radius:17px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom:40px;
+}
+
+.inner-info{
+    position: absolute;
+   width:80%;
+   top:15%;
+  left:10%;
+   transform: translate(-50% -50%);
+}
+.inner-info p{
+    font-size:24px;
+    margin-bottom: 25px;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.Quote-title{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.Quote-title div{
+    background-color: black;
+    width:100%;
+    margin-right:10px;
+    padding:13px;
+    border-radius: 13px;
+}
+
+
+
+.bottom-navigation {
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.bottom-navigation a,.fa-solid{
+    color:white;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.category-list{
+    width:100%;
+    margin-bottom:20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly
+}
+.card{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    margin:10px 0 30px 0;
+}
+.card p{
+    font-size: 15px;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+}
+.card img{
+    height:120px;
+    width:120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+ /* card.html */
+ .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+.card-out{
+    position: relative;
+    height:300px;
+    width:320px;
+   margin-bottom: 20px;
+}
+.card-out img{
+    position: absolute;
+    height:100%;
+    width:100%;
+    border-radius: 17px;
+}
+.card-out div{
+    position: absolute;
+    color:white;
+    top:60px;
+    padding:20px;
+}
+.card-out h2{
+    margin-top:20px;
+    font-size: 19px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.card-out p{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* category.html */
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #060606;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    background-color: #333;
+    color:white
+}
+::placeholder {
+    color: white; /* Set the placeholder color to gray (#999) */
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid #ccc; /* Set the bottom border for table header and data cells */
+    padding: 10px; /* Add padding for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Add a background color to header cells */
+}
+
+.setting{
+    width:500px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.setting a{
+    text-decoration: none;
+    color:white;
+    width:100%;
+    background-color: #060606;
+    margin-bottom:10px;
+    padding:10px 0;
+    border-radius: 15px;
+}
+@media screen and (max-width: 767px) {
+    .Quote-title{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .Quote-title div{
+        margin-top:10px;
+    }
+    .card-out{
+        position: relative;
+        height:300px;
+        width:100%;
+    }
+    .setting{
+        width:100%;
+    }
+    .bottom-navigation a,.fa-solid{
+        color:white;
+        text-decoration: none;
+        font-size: 2vw;
+    }
+}
+   
